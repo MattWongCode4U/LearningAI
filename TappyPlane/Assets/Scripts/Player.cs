@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[System.Serializable]
 public class Player : MonoBehaviour {
 
     //The force which is added when the player jumps
@@ -34,5 +35,6 @@ public class Player : MonoBehaviour {
     void Die()
     {
         Application.LoadLevel(Application.loadedLevel);
+        Scripts.index = 0;
     }
 }
